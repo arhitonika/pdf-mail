@@ -1,0 +1,242 @@
+/* RESET */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100% !important;
+}
+
+img {
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse !important;
+}
+
+/* CLIENT SPECIFIC STYLES */
+/* Force Outlook to provide a "view in browser" message */
+#outlook a {
+  padding: 0;
+}
+
+.ReadMsgBody {
+  width: 100%;
+}
+
+.ExternalClass {
+  width: 100%;
+  line-height: 100%;
+}
+
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+body, table, td, p, a, li, blockquote {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Remove spacing between tables in Outlook 2007 and up */
+table, td {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+/* Allow smoother rendering of resized image in Internet Explorer */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+a {
+  color: #000;
+}
+
+#body-container {
+  width: 600px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* **********************
+
+	Main Content
+
+ ********************** */
+#template-content {
+  background-color: #fff;
+  box-shadow: 2px 2px 3px rgba(150, 150, 150, 0.2);
+  border: 1px solid #ddd;
+}
+
+#template-content-header {
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+
+#template-content-header td {
+  background-color: #fff;
+  padding: 20px 15px;
+  font-family: "Helvetica Neue", Helvetica, "Arial", sans-serif;
+}
+
+.email-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  line-height: 120%;
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.email-subtitle {
+  font-size: 14px;
+}
+
+.email-logo {
+  width: 78px;
+}
+
+.email-link {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #7DBE40;
+  text-decoration: none;
+}
+
+.email-greentext {
+  color: #7DBE40;
+}
+
+.email-graytext {
+  color: gray;
+}
+
+.email-redtext {
+  color: red;
+}
+
+/* */
+#template-content-content {
+  width: 90%;
+  max-width: 560px;
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 30px 0;
+}
+
+#template-content-content table {
+  width: 100%;
+  border-top: 1px solid #ddd;
+}
+
+#template-content-content table p {
+  font-size: 16px;
+}
+
+#template-content-content td {
+  padding: 20px 0;
+}
+
+#template-content-content td:first-child {
+  width: 80%;
+}
+
+#template-content-content td:last-child {
+  font-size: 16px;
+}
+
+#template-content-content h2 {
+  font-size: 20px;
+}
+
+#template-content-content h4 {
+  margin-bottom: 10px;
+}
+
+#template-content-content p {
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+#template-content-content a {
+  display: inline-block;
+  color: #7DBE40;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#template-content-content .email-forget {
+  text-align: center;
+}
+
+#template-content-content .email-forget a {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 3px;
+  background: #7DBE40;
+  color: white;
+}
+
+/* */
+#template-content-footer {
+  background-color: #F5F5F5;
+}
+
+#template-content-footer td {
+  padding: 20px 30px;
+  font-family: "Helvetica Neue", Helvetica, "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 125%;
+  font-size: 15px;
+}
+
+#template-content-footer p {
+  margin-bottom: 10px;
+}
+
+#template-content-footer a {
+  color: #7DBE40;
+  text-decoration: none;
+}
+
+/* **********************
+
+	Footer
+
+ ********************** */
+#template-footer td {
+  font-family: "Helvetica Neue", Helvetica, "Arial", sans-serif;
+  color: #606060;
+  font-size: 11px;
+  line-height: 150%;
+  text-align: center;
+  padding: 30px 10px 20px;
+}
+
+#template-footer p {
+  display: block;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,11 @@
+include ../item-box/item-box
+include ../table/table
+
+mixin content()
+
+	.content
+		h1.content__title
+			| Мой проект №1 для Петрова И.Г.
+			span.content__subtitle  Кухня
+		+item-box
+		+table

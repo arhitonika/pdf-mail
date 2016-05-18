@@ -1,0 +1,17 @@
+include ../blocks/pr-info/pr-info
+include ../blocks/pr-table/pr-table
+include ../blocks/pr-message/pr-message
+include ../blocks/header/header
+include ../blocks/content/content
+include ../blocks/footer/footer
+
+extends /blocks/layout-default/layout-default
+
+block head
+	- var pageTitle = 'CSSSR Project Template';
+
+block content
+
+	+header
+	+content
+	+footer

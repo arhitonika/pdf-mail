@@ -1,0 +1,18 @@
+mixin pr-info()
+
+	+b.pr-info
+		+e('h1').title Мой проект №1 для Петрова И.Г.
+			span Кухня
+		+e('table').table
+			tr
+				td
+					p Кухня вариант 1
+					p 5 изделий
+				td
+					img(src='/assets/images/table-img.png')
+					p Встроенный монтаж
+					p ABB Серия Династия
+					p Стекло
+				td
+					+e('p').total 122 860 &#8381;
+					+e('p').delivery Время поставки до 2 недель

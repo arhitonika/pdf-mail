@@ -1,0 +1,153 @@
+{% extends "mailchimp.nunjucks" %}
+
+{% block preheader %}
+A gulp workflow for building 1HTML emails
+{% endblock %}
+
+{% block email_title %}
+Архитоника
+{% endblock %}
+
+{% block email_subtitle %}
+архитектурная электроника
+{% endblock %}
+
+
+{% block email_content %}
+<h2>Здравствуйте, Константин!</h2>
+
+<p>
+	Спасибо за покупку. Ваш заказ <strong>№748751</strong> был принят в обработку.
+</p>
+<br>
+<h4>Способ доставки</h4>
+
+<p>
+	Самовывоз со склада - бесплатно
+</p>
+<p>
+	ТЦ "Строймаркет Василеостровский", модули 36Б
+</p>
+<p>
+	ул. Железноводская, д.3, Санкт-Петербург
+</p>
+<a href="#">Посмотреть на карте</a>
+
+<h4>Контактные данные</h4>
+<p>
+	Константин Константинопольский
+</p>
+<p>
+	+7 (911) 000-00-00
+</p>
+<a href="mailto:konstantin@gmail.com">konstantin@gmail.com</a>
+
+<h4>Заказ</h4>
+<table cellpadding="20px">
+	<tr>
+		<td>
+			<p>
+				Проект: <span mc:edit="email_greentext" class="email-greentext">Модер, загородный дом</span>
+			</p>
+			<p mc:edit="email_greentext" class="email-greentext">
+				Reccagni Angelo Люстра бронза с белыми плафонами
+			</p>
+			<p mc:edit="email_graytext" class="email-graytext">
+				Артикул L 5650-3
+			</p>
+			<p>
+				11 изделий
+			</p>
+		</td>
+		<td align="right">
+			<p>
+				~122 860 &#8381;
+			</p>
+		</td>
+	</tr>
+</table>
+
+<table cellpadding="20px">
+	<tr>
+		<td>
+			<p mc:edit="email_greentext" class="email-greentext">
+				Reccagni Angelo Люстра бронза с белыми плафонами
+			</p>
+			<p mc:edit="email_graytext" class="email-graytext">
+				Артикул L 5650-3
+			</p>
+			<p>
+				1 шт.
+			</p>
+		</td>
+		<td align="right">
+			<p>
+				1 860 &#8381;
+			</p>
+		</td>
+	</tr>
+</table>
+
+<table cellpadding="20px">
+	<tr>
+		<td>
+			<p>
+				Сумма покупки
+			</p>
+		</td>
+		<td align="right">
+			<p>
+				122 860 &#8381;
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p>
+				Скидка
+			</p>
+		</td>
+		<td align="right">
+			<p mc:edit="email_redtext" class="email-redtext">
+				-1000 &#8381;
+			</p>
+		</td>
+	</tr>
+</table>
+
+<table cellpadding="20px">
+	<tr>
+		<td>
+			<p>
+				<strong>Итого:</strong>
+			</p>
+		</td>
+		<td align="right">
+			<p>
+				<strong>121 860 &#8381;</strong>
+			</p>
+		</td>
+	</tr>
+</table>
+{% endblock %}
+
+{% block email_footer %}
+<p>
+	Мы рады ответить на ваши вопросы по&nbsp;
+	<a href="#">электронной почте</a>
+</p>
+
+<p>
+	или по телефону 8 (812) 703-13-43 (<span mc:edit="email_graytext" class="email-graytext">пн-пт: 10-20, выходные: 11-18</span>)
+</p>
+
+<br>
+
+<p>
+	С уважением,
+</p>
+<p>
+	Компания Архитоника
+</p>
+
+{% endblock %}
